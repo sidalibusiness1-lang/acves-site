@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACVES – Collège Algérien de Chirurgie Vasculaire et Endovasculaire</title>
+<meta name="description" content="ACVES – Collège Algérien de Chirurgie Vasculaire et Endovasculaire : congrès, formations, ressources et inscriptions.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f3d78'/%3E%3Cpath d='M16 28V12M16 12l-6-6M16 12l6-6M16 18l-7-3M16 18l7-3' stroke='%23ff5a3c' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2c5a;--navy2:#0f3d78;--blue:#1268b3;--sky:#2f8fd8;--red:#d6332b;--green:#1f8a4c;--bg:#f3f6fb;--card:#fff;--line:#d9e3f0;--ink:#13233d;--muted:#5b6b82}
+*{box-sizing:border-box}html{scroll-behavior:smooth}section,[id]{scroll-margin-top:56px}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:var(--blue);text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+/* header */
+.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;padding-top:16px;padding-bottom:16px}
+.brand{display:flex;align-items:center;gap:16px;flex:1;min-width:0}
+.brand .logo{flex:none;display:block}
+.brand .logo img{display:block;height:92px;width:auto}
+.brand-txt{border-left:2px solid var(--line);padding-left:18px;min-width:0}
+.brand h1{margin:0;font-size:24px;font-weight:800;color:var(--navy);letter-spacing:-.3px;line-height:1.15;max-width:520px}
+.brand .sub{font-size:15px;color:var(--blue);font-weight:600;margin-top:4px}
+.brand .motto{font-style:italic;color:var(--navy2);font-size:15px}
+.tools{display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.langs{display:flex;gap:8px}
+.langs button{border:1px solid var(--line);background:#eef3fa;color:var(--navy);border-radius:20px;padding:6px 14px;font-weight:600;cursor:pointer;font:inherit;font-size:13px}
+.langs button.on{background:var(--navy2);color:#fff;border-color:var(--navy2)}
+.search{display:flex;align-items:center;border:1px solid var(--line);border-radius:24px;padding:6px 8px 6px 16px;width:240px;background:#fff}
+.search input{border:0;outline:0;flex:1;font:inherit;font-size:14px;min-width:0}
+.search button{border:0;background:none;cursor:pointer;color:var(--navy)}
+nav.main{background:var(--navy);position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+nav.main ul{list-style:none;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;max-width:1240px;overflow-x:auto}
+nav.main a{display:block;color:#fff;padding:14px 12px;font-weight:500;font-size:15px;white-space:nowrap;border-bottom:3px solid transparent}
+nav.main a:hover,nav.main a.on{border-bottom-color:#fff;background:rgba(255,255,255,.06)}
+/* hero */
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(circle at 75% 40%,#1f6fc1 0,#0f3d78 35%,#0a2348 75%);min-height:360px}
+.hero .wrap{position:relative;z-index:2;padding-top:56px;padding-bottom:56px;max-width:1240px}
+.hero h2{font-size:clamp(28px,3.6vw,42px);line-height:1.15;margin:0 0 14px;max-width:620px;font-weight:700}
+.hero p.tag{font-style:italic;font-size:20px;opacity:.95;margin:0 0 28px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:28px;padding:11px 22px;font-weight:600;cursor:pointer;font:inherit;font-size:15px}
+.btn.ghost{border:1.5px solid #fff;color:#fff;background:rgba(255,255,255,.06)}
+.btn.ghost:hover{background:#fff;color:var(--navy)}
+.btn.solid{background:var(--navy);color:#fff;border:0}
+.btn.solid:hover{background:var(--blue)}
+.hero{background:#0c2a55}
+.hero{min-height:440px;display:flex;align-items:center}
+.hero{min-height:520px;background:#06142a}
+.hero-art{position:absolute;top:0;bottom:0;right:0;height:100%;aspect-ratio:2000/1116;max-width:100%;z-index:1;background:url(hero.jpg) right center/cover no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.6) 10%,#000 22%);mask-image:linear-gradient(90deg,transparent 0,rgba(0,0,0,.6) 10%,#000 22%)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#06142a 0,#06142a 22%,rgba(6,20,42,.6) 34%,rgba(6,20,42,0) 46%);z-index:1}
+.hero h2{max-width:540px}
+.hero .wrap{width:100%}
+/* quick cards */
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:24px auto}
+.qc{display:flex;gap:16px;align-items:center;background:#eef3fa;border:1px solid var(--line);border-radius:8px;padding:20px;color:var(--ink);transition:.2s}
+.qc:hover{background:#fff;box-shadow:0 6px 18px rgba(15,61,120,.12);transform:translateY(-2px)}
+.qc svg{flex:none;color:var(--navy2)}
+.qc b{display:block;color:var(--navy);font-size:16px}
+.qc span{font-size:13px;color:var(--muted)}
+/* panels */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:28px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;display:flex;flex-direction:column}
+.ph{display:flex;align-items:center;gap:10px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:12px}
+.ph h3{margin:0;font-size:19px;color:var(--navy);flex:1}
+.ph a{font-size:13px;font-weight:600}
+.ev{display:flex;gap:14px;padding:8px 0;border-bottom:1px solid #eef2f8}
+.ev:last-child{border:0}
+.date{flex:none;width:66px;background:var(--blue);color:#fff;border-radius:4px;text-align:center;padding:6px 0;line-height:1.1}
+.date b{display:block;font-size:22px}.date span{font-size:12px;display:block}
+.ev h4{margin:2px 0;font-size:15px;color:var(--navy)}
+.ev p{margin:0;font-size:13px;color:var(--muted)}
+.news{display:flex;gap:14px}
+.thumb{flex:none;width:150px;height:130px;border-radius:6px;background:linear-gradient(135deg,#5fb2e6,#1a6aa8);display:grid;place-items:center;color:#fff}
+.news h4{margin:0 0 8px;color:var(--navy);font-size:15px}
+.meta{font-size:12px;color:var(--muted)}
+.banner{display:block;height:150px;border-radius:6px;overflow:hidden;margin-bottom:12px;background:#0c2a55}
+.banner img{width:100%;height:100%;object-fit:cover;object-position:center 18%;transition:transform .3s}
+.banner:hover img{transform:scale(1.04)}
+a.ev{color:inherit}
+a.ev:hover h4{color:var(--blue)}
+.date.red{background:var(--red)}
+.btn.sm{padding:7px 14px;font-size:13px}
+.btn.outline{border:1.5px solid var(--navy);color:var(--navy);background:#fff}
+.btn.outline:hover{background:var(--navy);color:#fff}
+.btn.red{background:var(--red);color:#fff;border:0}
+.btn.red:hover{background:#b8261f}
+/* sections */
+section.sec{padding:56px 0;border-top:1px solid var(--line)}
+section.sec.alt{background:#fff}
+.eyebrow{color:var(--blue);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:12px}
+.sec h2{font-size:30px;color:var(--navy);margin:6px 0 12px}
+.lead{color:var(--muted);max-width:780px;font-size:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:26px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;border-top:4px solid var(--blue)}
+.sec.alt .card{background:var(--bg)}
+.card h3{margin:0 0 8px;color:var(--navy);font-size:17px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.card ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.stat{background:var(--navy);color:#fff;border-radius:10px;padding:20px;text-align:center}
+.stat b{font-size:28px;display:block}.stat span{font-size:13px;opacity:.85}
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:start}
+/* table events */
+table.ev-t{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;margin-top:24px;font-size:14px}
+.ev-t th{background:var(--navy);color:#fff;text-align:left;padding:12px}
+.ev-t td{padding:12px;border-bottom:1px solid var(--line)}
+.pill{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:600;background:#e4f1e9;color:var(--green)}
+.pill.soon{background:#fff1e0;color:#b36200}
+.empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#8aa0bd;padding:24px 10px}
+.empty p{margin:10px 0 2px;color:var(--navy);font-weight:600;font-size:15px}
+.empty span{font-size:13px;color:var(--muted)}
+.empty.big{background:#fff;border:1px dashed #c6d3e5;border-radius:10px;margin-top:24px;padding:40px}
+/* congress */
+.congress{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;margin-top:24px;box-shadow:0 10px 30px rgba(15,61,120,.07)}
+.cg-tag{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;border-radius:14px}
+.cg-head h3{font-size:26px;color:var(--navy);margin:12px 0 6px;line-height:1.2}
+.cg-topic{margin:0 0 16px;color:var(--ink);font-size:17px}.cg-topic b{color:var(--red)}.cg-topic span{color:var(--muted);font-style:italic}
+.cg-facts{display:flex;flex-wrap:wrap;gap:12px 28px;color:var(--navy2)}
+.cg-facts div{display:flex;align-items:center;gap:8px;font-size:15px}
+.flyers{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:26px 0}
+.flyers a{display:block;position:relative;border-radius:12px;overflow:hidden;box-shadow:0 14px 34px rgba(11,44,90,.22);transition:transform .25s,box-shadow .25s}
+.flyers a:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(11,44,90,.3)}
+.flyers img{display:block;width:100%;height:auto}
+.flyers span{position:absolute;left:12px;bottom:12px;background:rgba(11,44,90,.85);color:#fff;font-size:13px;font-weight:600;padding:6px 12px;border-radius:16px}
+.cg-sub{color:var(--navy);font-size:19px;margin:6px 0 14px}
+.themes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.themes div{background:var(--bg);border-left:4px solid var(--blue);border-radius:6px;padding:12px 14px}
+.themes div:nth-child(even){border-left-color:var(--red)}
+.themes b{display:block;color:var(--navy);font-size:14px}.themes span{font-size:13px;color:var(--muted);font-style:italic}
+.cg-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+/* call for abstracts */
+.cfa{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:center;background:linear-gradient(135deg,#0b2c5a 0,#0f3d78 55%,#1268b3 100%);color:#fff;border-radius:16px;padding:34px;position:relative;overflow:hidden}
+.cfa:after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(214,51,43,.45),transparent 70%)}
+.cfa h2{color:#fff;font-size:30px;margin:6px 0 14px}
+.cfa p{margin:0 0 12px;opacity:.95}
+.cfa-lead{font-size:17px}
+.cfa-facts{list-style:none;padding:0;margin:16px 0;display:grid;gap:8px}
+.cfa-facts li{background:rgba(255,255,255,.1);border-radius:8px;padding:9px 14px}
+.cfa-call{font-weight:700;font-size:17px}
+.countdown{position:relative;z-index:1;background:#fff;color:var(--navy);border-radius:14px;padding:22px;text-align:center}
+.cd-title{font-weight:700;text-transform:uppercase;letter-spacing:1.5px;font-size:13px;color:var(--red)}
+.cd-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}
+.cd-grid div{background:var(--bg);border-radius:8px;padding:10px 4px}
+.cd-grid b{display:block;font-size:30px;line-height:1.1;font-variant-numeric:tabular-nums}
+.cd-grid span{font-size:12px;color:var(--muted)}
+.cd-date{font-size:13px;color:var(--muted)}
+input[type=file]{padding:8px;background:#fff}
+/* forms */
+form{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px}
+.sec.alt form{background:var(--bg)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:13px;font-weight:600;color:var(--navy);margin:10px 0 4px}
+input,select,textarea{width:100%;padding:10px 12px;border:1px solid #c6d3e5;border-radius:6px;font:inherit;font-size:14px;background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--sky);border-color:var(--sky)}
+.note{font-size:12px;color:var(--muted);margin-top:10px}
+.ok{display:none;margin-top:12px;padding:10px;border-radius:6px;background:#e4f1e9;color:var(--green);font-size:14px}
+.contact-box{background:linear-gradient(135deg,#0f3d78,#1268b3);color:#fff;border-radius:12px;padding:28px}
+.contact-box h3{margin-top:0}
+.ci{display:flex;gap:12px;align-items:center;margin:14px 0;font-size:17px}
+.ci a{color:#fff;font-weight:600}
+.ci svg{flex:none}
+/* footer */
+footer{background:var(--navy);color:#dbe6f5;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:24px;padding-top:18px;padding-bottom:18px}
+footer a{color:#fff}
+.soc{display:flex;gap:14px}
+.fl{margin-left:auto;font-style:italic}
+.copy{border-top:1px solid rgba(255,255,255,.12);text-align:center;padding:10px;font-size:12px;opacity:.75}
+[dir=rtl] .brand,[dir=rtl] nav.main ul{direction:rtl}
+@media(max-width:980px){.cfa{grid-template-columns:1fr}.themes{grid-template-columns:1fr 1fr}.quick{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.tools{display:none}.hero{min-height:420px}.hero-art{left:0;width:auto;aspect-ratio:auto;max-width:none;-webkit-mask-image:none;mask-image:none;background-size:cover;background-position:72% 35%}.hero:after{background:linear-gradient(90deg,rgba(6,20,42,.94) 0,rgba(6,20,42,.7) 45%,rgba(6,20,42,.25) 100%)}}
+@media(max-width:760px){.hero{min-height:540px;align-items:flex-end}.hero-art{background-image:url(hero-mobile.jpg);background-size:cover;background-position:50% 18%}.hero:after{background:linear-gradient(180deg,rgba(6,20,42,0) 0,rgba(6,20,42,.15) 35%,rgba(6,20,42,.85) 66%,#06142a 100%)}.hero .wrap{padding-top:40px;padding-bottom:32px}.hero h2{font-size:26px}.hero p.tag{font-size:16px;margin-bottom:20px}}
+@media(max-width:560px){.flyers,.themes{grid-template-columns:1fr}.congress,.cfa{padding:20px}.cg-head h3{font-size:21px}.cfa h2{font-size:24px}.cd-grid b{font-size:24px}.quick{grid-template-columns:1fr}.top .wrap{padding-top:10px;padding-bottom:10px}.brand{gap:12px}.brand .logo img{height:50px}.brand-txt{padding-left:12px}.brand h1{font-size:14px;line-height:1.25}.brand .sub{font-size:11.5px;margin-top:2px}.brand .motto{display:none}.row{grid-template-columns:1fr}.news{flex-direction:column}.thumb{width:100%}.ev-t{font-size:12px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+ <div class="wrap">
+  <div class="brand">
+   <a href="#accueil" class="logo"><img src="logo-acves.png" alt="ACVES – Algerian College of Vascular &amp; Endovascular Surgery" width="301" height="145"></a>
+   <div class="brand-txt">
+    <h1 data-i="title">Collège Algérien de Chirurgie Vasculaire et Endovasculaire</h1>
+    <div class="sub" data-i="sub">Chirurgie vasculaire · Chirurgie endovasculaire</div>
+    <div class="motto" data-i="motto">Soigner · Innover · Partager</div>
+   </div>
+  </div>
+  <div class="tools">
+   <div class="langs"><button class="on" data-l="fr">FR</button><button data-l="ar">AR</button><button data-l="en">EN</button></div>
+   <form class="search" onsubmit="return doSearch(event)" style="padding:6px 8px 6px 16px;border-radius:24px">
+    <input id="q" placeholder="Rechercher..." aria-label="Rechercher">
+    <button aria-label="Rechercher"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+   </form>
+  </div>
+ </div>
+</header>
+
+<nav class="main">
+ <ul>
+  <li><a href="#accueil" class="on" aria-label="Accueil"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 3l10 9h-3v9h-5v-6h-4v6H5v-9H2z"/></svg></a></li>
+  <li><a href="#accueil" data-i="n1">Accueil</a></li>
+  <li><a href="#apropos" data-i="n2">À propos</a></li>
+  <li><a href="#pathologies" data-i="n3">Pathologies</a></li>
+  <li><a href="#techniques" data-i="n4">Techniques</a></li>
+  <li><a href="#evenements" data-i="n5">Événements</a></li>
+  <li><a href="#congres2027" data-i="n6">Congrès</a></li>
+  <li><a href="#abstracts" data-i="n9">Abstracts</a></li>
+  <li><a href="#ressources" data-i="n7">Ressources</a></li>
+  <li><a href="#contact" data-i="n8">Contact</a></li>
+ </ul>
+</nav>
+
+<section class="hero" id="accueil">
+ <div class="hero-art" role="img" aria-label="Maqam Echahid à Alger et endoprothèse aortique thoraco-abdominale dans le système vasculaire"></div>
+ <div class="wrap">
+  <h2 data-i="h">Ensemble pour une chirurgie vasculaire d’excellence en Algérie</h2>
+  <p class="tag" data-i="tag">Vasculaire · Endovasculaire · Innovation</p>
+  <a class="btn ghost" href="#apropos"><span data-i="cta">Découvrir notre mission</span> →</a>
+ </div>
+</section>
+
+<div class="wrap">
+ <div class="quick">
+  <a class="qc" href="#techniques"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3v6a5 5 0 0010 0V3M10 14v2a5 5 0 0010 0v-2"/><circle cx="20" cy="12" r="2"/></svg><div><b data-i="q1">Nos Activités</b><span>Vasculaire &amp; Endovasculaire</span></div></a>
+  <a class="qc" href="#evenements"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></svg><div><b data-i="q2">Événements à Venir</b><span>Congrès, formations</span></div></a>
+  <a class="qc" href="#ressources"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 5c3-1 7-1 10 1 3-2 7-2 10-1v14c-3-1-7-1-10 1-3-2-7-2-10-1zM12 6v14"/></svg><div><b data-i="q3">Ressources</b><span>Guidelines, fiches pratiques</span></div></a>
+  <a class="qc" href="#contact"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="5" width="20" height="14" rx="1"/><path d="M2 6l10 7 10-7"/></svg><div><b data-i="q4">Nous Contacter</b><span>Une question ?</span></div></a>
+ </div>
+
+ <div class="grid3">
+  <div class="panel">
+   <div class="ph"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f3d78" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><h3 data-i="q2">Événements à Venir</h3><a href="#evenements">Voir tout →</a></div>
+   <a class="ev" href="#congres2027"><div class="date"><b>30</b><span>Avr</span><span>2027</span></div><div><h4>2ème Congrès de l’ACVES</h4><p>30 avril – 1er mai 2027 · Hôtel Sofitel Hamma Garden, Alger</p></div></a>
+   <a class="ev" href="#abstracts"><div class="date red"><b>31</b><span>Déc</span><span>2026</span></div><div><h4>Date limite – soumission des abstracts</h4><p>Communications orales et posters</p></div></a>
+  </div>
+  <div class="panel">
+   <div class="ph"><svg width="22" height="22" viewBox="0 0 24 24" fill="#0f3d78"><path d="M3 10v4h3l7 4V6L6 10zM16 8c2 1 2 7 0 8M19 6c3 2 3 10 0 12" stroke="#0f3d78" stroke-width="1.5" fill-opacity=".9"/></svg><h3 data-i="news">Actualités</h3><a href="#actualites">Voir tout →</a></div>
+   <div class="news">
+    <div class="thumb"><svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.3"><circle cx="8" cy="7" r="3"/><circle cx="16" cy="7" r="3"/><path d="M2 21v-3a5 5 0 0110 0v3M12 21v-3a5 5 0 0110 0v3"/></svg></div>
+    <div><h4>Succès d’une implantation d’endoprothèse aortique en Algérie</h4><div class="meta">🗓 Actualité du service</div><p style="font-size:13px;margin:8px 0 0">Une équipe algérienne réalise avec succès une intervention endovasculaire innovante…</p></div>
+   </div>
+  </div>
+  <div class="panel" id="congres">
+   <div class="ph"><svg width="22" height="22" viewBox="0 0 24 24" fill="#0f3d78"><circle cx="12" cy="7" r="3"/><circle cx="5" cy="9" r="2.3"/><circle cx="19" cy="9" r="2.3"/><path d="M6 20a6 6 0 0112 0zM0 19a5 5 0 016-4M24 19a5 5 0 00-6-4"/></svg><h3 data-i="n6">Congrès</h3><a href="#evenements">Voir tout →</a></div>
+   <a class="banner" href="#congres2027"><img src="flyer-save-the-date.jpg" alt="Affiche du 2ème Congrès de l’ACVES" loading="lazy"></a>
+   <h4 style="margin:0;color:var(--navy);font-size:17px">2ème Congrès de l’ACVES – Cancer et maladies vasculaires</h4>
+   <p class="meta">Alger – 30 avril – 1er mai 2027</p>
+   <div style="margin-top:auto;display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap"><a class="btn outline sm" href="#abstracts">Abstracts</a><a class="btn solid sm" href="#inscription">S’inscrire →</a></div>
+  </div>
+ </div>
+</div>
+
+<section class="sec alt" id="apropos">
+ <div class="wrap two">
+  <div>
+   <div class="eyebrow">ACVES · acves.dz</div>
+   <h2 data-i="n2">À propos</h2>
+   <p class="lead">L’ACVES rassemble les chirurgiens vasculaires et endovasculaires d’Algérie autour d’un objectif commun : offrir à chaque patient une prise en charge conforme aux standards internationaux.</p>
+   <div class="cards" style="grid-template-columns:1fr 1fr">
+    <div class="card"><h3>Notre mission</h3><p>Promouvoir l’excellence clinique, la formation continue et la recherche en chirurgie vasculaire et endovasculaire.</p></div>
+    <div class="card"><h3>Notre vision</h3><p>Un réseau national de centres de référence, connectés aux sociétés savantes internationales.</p></div>
+    <div class="card"><h3>Nos valeurs</h3><p>Éthique, rigueur scientifique, collégialité et partage d’expérience.</p></div>
+    <div class="card"><h3>Nos partenaires</h3><p>CHU, établissements hospitaliers, universités et sociétés savantes nationales et internationales.</p></div>
+   </div>
+  </div>
+  <div>
+   <div class="stats" style="grid-template-columns:1fr 1fr;margin-top:56px">
+    <div class="stat"><b>2ème</b><span>Congrès national en 2027</span></div>
+    <div class="stat"><b>FR · AR · EN</b><span>Communication trilingue</span></div>
+    <div class="stat"><b>DPC</b><span>Formation médicale continue</span></div>
+    <div class="stat"><b>58</b><span>Wilayas concernées</span></div>
+   </div>
+   <div class="card" style="margin-top:18px;border-top-color:var(--red)"><h3>Objectifs</h3><ul><li>Diffuser les recommandations (ESVS, SVS)</li><li>Organiser congrès, ateliers et simulations</li><li>Structurer des registres nationaux</li><li>Développer les techniques endovasculaires</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="pathologies">
+ <div class="wrap">
+  <div class="eyebrow">Clinique</div>
+  <h2 data-i="n3">Pathologies</h2>
+  <p class="lead">Principales affections prises en charge par nos équipes, du diagnostic au suivi à long terme.</p>
+  <div class="cards">
+   <div class="card"><h3>Anévrismes de l’aorte</h3><p>Anévrismes de l’aorte abdominale et thoracique : dépistage, surveillance, traitement chirurgical ou endovasculaire (EVAR / TEVAR).</p></div>
+   <div class="card"><h3>Artériopathie oblitérante (AOMI)</h3><p>Claudication, ischémie critique chronique, pied diabétique ; revascularisation et sauvetage de membre.</p></div>
+   <div class="card"><h3>Sténoses carotidiennes</h3><p>Prévention de l’AVC : endartériectomie carotidienne et angioplastie-stenting.</p></div>
+   <div class="card"><h3>Maladie veineuse</h3><p>Varices, insuffisance veineuse chronique, thrombose veineuse profonde et syndrome post-thrombotique.</p></div>
+   <div class="card"><h3>Ischémie aiguë et traumatismes vasculaires</h3><p>Urgences vasculaires : embolectomie, thrombolyse, réparation artérielle.</p></div>
+   <div class="card"><h3>Accès vasculaires pour hémodialyse</h3><p>Création et entretien des fistules artério-veineuses et prothèses d’abord vasculaire.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec alt" id="techniques">
+ <div class="wrap">
+  <div class="eyebrow">Savoir-faire</div>
+  <h2 data-i="n4">Techniques</h2>
+  <div class="cards">
+   <div class="card"><h3>Chirurgie endovasculaire</h3><ul><li>EVAR, TEVAR, FEVAR / BEVAR</li><li>Angioplastie et stenting périphérique</li><li>Athérectomie, ballons actifs</li><li>Embolisation</li></ul></div>
+   <div class="card"><h3>Chirurgie ouverte</h3><ul><li>Pontages aorto-iliaques et périphériques</li><li>Endartériectomie carotidienne</li><li>Mise à plat-greffe de l’aorte</li><li>Chirurgie hybride</li></ul></div>
+   <div class="card" style="border-top-color:var(--red)"><h3>Chirurgie veineuse</h3><ul><li>Traitement endoveineux des varices (laser, radiofréquence)</li><li>Désobstruction et stenting veineux</li><li>Prise en charge de la thrombose veineuse</li></ul></div>
+   <div class="card"><h3>Accès vasculaires</h3><ul><li>Fistules artério-veineuses natives</li><li>Prothèses et cathéters</li><li>Angioplastie de fistule</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="evenements">
+ <div class="wrap">
+  <div class="eyebrow">Agenda</div>
+  <h2 data-i="q2">Événements à Venir</h2>
+  <p class="lead">Congrès, journées scientifiques et ateliers pratiques organisés par l’ACVES.</p>
+  <article class="congress" id="congres2027">
+   <div class="cg-head">
+    <span class="cg-tag">Save the Date</span>
+    <h3>2ème Congrès du Collège Algérien de Chirurgie Vasculaire et Endovasculaire</h3>
+    <p class="cg-topic">Thème principal : <b>Cancer et maladies vasculaires</b> <span>· Cancer and Vascular Disease</span></p>
+    <div class="cg-facts">
+     <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span><b>30 avril – 1er mai 2027</b></span></div>
+     <div><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5z"/></svg><span><b>Hôtel Sofitel Hamma Garden</b>, Alger – Algérie</span></div>
+     <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H5.5L4 18z"/></svg><span>Rencontre internationale d’experts</span></div>
+    </div>
+   </div>
+   <div class="flyers">
+    <a href="flyer-save-the-date.jpg" target="_blank" rel="noopener"><img src="flyer-save-the-date.jpg" alt="Affiche Save the Date – 2ème Congrès de l’ACVES, 30 avril – 1er mai 2027, Alger" width="853" height="1280" loading="lazy"><span>Affiche – Save the Date ↗</span></a>
+    <a href="flyer-programme.jpg" target="_blank" rel="noopener"><img src="flyer-programme.jpg" alt="Affiche du programme scientifique – 2ème Congrès de l’ACVES" width="853" height="1280" loading="lazy"><span>Programme scientifique ↗</span></a>
+   </div>
+   <h3 class="cg-sub">Programme scientifique – thèmes principaux</h3>
+   <div class="themes">
+    <div><b>Cancer et pathologie vasculaire</b><span>Complications thrombotiques du cancer et anticoagulation</span></div>
+    <div><b>Pathologie aortique et vasculaire périphérique</b><span>Diagnostic, prise en charge et innovations</span></div>
+    <div><b>Innovations endovasculaires</b><span>Approches artérielles et veineuses</span></div>
+    <div><b>HTA, diabète et dyslipidémie</b><span>Gestion du risque vasculaire</span></div>
+    <div><b>Avancées en chirurgie vasculaire et endovasculaire</b><span>Des preuves à la pratique</span></div>
+    <div><b>Complications vasculaires du cancer</b><span>Prévention et prise en charge</span></div>
+   </div>
+   <div class="cg-cta"><a class="btn red" href="#abstracts">Soumettre un abstract →</a><a class="btn solid" href="#inscription">S’inscrire au congrès →</a></div>
+  </article>
+ </div>
+</section>
+
+<section class="sec alt" id="abstracts">
+ <div class="wrap">
+  <div class="cfa">
+   <div class="cfa-text">
+    <div class="eyebrow" style="color:#ffb3ae">2ème Congrès de l’ACVES</div>
+    <h2>🚨 Call for Abstract Submissions!</h2>
+    <p class="cfa-lead">⏳ The countdown is on – This is your opportunity to showcase your research, share your scientific insights, and contribute to the advancement of vascular and endovascular surgery at the 2nd Congress of the ACVES.</p>
+    <p>🌟 Present your work as an oral or poster speaker, exchange ideas, and connect with leading experts and international peers in the field worldwide.</p>
+    <ul class="cfa-facts">
+     <li>📅 <b>Abstract Submission Deadline:</b> December 31, 2026</li>
+     <li>🗓️ <b>Conference Dates:</b> April 30 – May 1st, 2027, Algiers</li>
+     <li>📍 <b>Sofitel Hamma Garden Hotel</b>, Algiers – Algeria</li>
+    </ul>
+    <p class="cfa-call">📢 Don’t let your research go unnoticed. Submit your abstract today!</p>
+   </div>
+   <div class="countdown" aria-live="polite">
+    <div class="cd-title">Clôture des soumissions</div>
+    <div class="cd-grid" id="cd"><div><b data-u="d">–</b><span>jours</span></div><div><b data-u="h">–</b><span>heures</span></div><div><b data-u="m">–</b><span>minutes</span></div><div><b data-u="s">–</b><span>secondes</span></div></div>
+    <div class="cd-date">31 décembre 2026 · 23:59 (Alger)</div>
+   </div>
+  </div>
+
+  <div class="two" style="margin-top:32px">
+   <div>
+    <h2 style="font-size:24px">Soumettre un abstract</h2>
+    <p class="lead">Remplissez le formulaire et joignez votre résumé. Le comité scientifique vous informera de sa décision par e-mail.</p>
+    <div class="card" style="border-top-color:var(--red)"><h3>Consignes</h3><ul><li>Résumé en français ou en anglais, 300 mots maximum</li><li>Structure : introduction, méthodes, résultats, conclusion</li><li>Format : communication orale ou poster</li><li>Fichier joint facultatif : PDF ou Word (5 Mo max.)</li><li>Date limite : 31 décembre 2026</li></ul></div>
+   </div>
+   <form name="abstract" method="POST" action="/merci.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="abstract"><p hidden><label>Ne pas remplir <input name="bot-field"></label></p>
+    <div class="row"><div><label>Nom *</label><input name="nom" required></div><div><label>Prénom *</label><input name="prenom" required></div></div>
+    <div class="row"><div><label>E-mail *</label><input name="email" type="email" required></div><div><label>Téléphone</label><input name="tel" type="tel"></div></div>
+    <div class="row"><div><label>Établissement *</label><input name="etab" required></div><div><label>Pays *</label><input name="pays" required value="Algérie"></div></div>
+    <label>Titre de l’abstract *</label><input name="titre" required>
+    <label>Auteurs (dans l’ordre) *</label><input name="auteurs" required placeholder="Ex. : A. Benali, S. Haddad, M. Kaci">
+    <div class="row"><div><label>Type de présentation *</label><select name="type" required><option value="">Choisir…</option><option>Communication orale</option><option>Poster</option><option>Indifférent</option></select></div>
+    <div><label>Thème *</label><select name="theme" required><option value="">Choisir…</option><option>Cancer et pathologie vasculaire</option><option>Pathologie aortique et vasculaire périphérique</option><option>Innovations endovasculaires</option><option>HTA, diabète et dyslipidémie</option><option>Avancées en chirurgie vasculaire et endovasculaire</option><option>Complications vasculaires du cancer</option><option>Autre</option></select></div></div>
+    <label>Résumé (300 mots max.) *</label><textarea name="resume" rows="7" required id="abs-txt"></textarea>
+    <div class="note" id="abs-count">0 / 300 mots</div>
+    <label>Fichier (PDF ou Word, facultatif)</label><input type="file" name="fichier" accept=".pdf,.doc,.docx">
+    <div style="margin-top:16px"><button class="btn red">Soumettre mon abstract →</button></div>
+    <p class="note">Les données sont utilisées uniquement pour l’évaluation scientifique et l’organisation du congrès.</p>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="inscription">
+ <div class="wrap two">
+  <div>
+   <div class="eyebrow">Participer</div>
+   <h2>Inscription au congrès</h2>
+   <p class="lead">Inscrivez-vous au 2ème Congrès de l’ACVES. Votre demande sera transmise à l’ACVES, qui vous confirmera votre inscription par e-mail.</p>
+   <div class="card" style="border-top-color:var(--green)"><h3>Informations pratiques</h3><ul><li>30 avril – 1er mai 2027</li><li>Hôtel Sofitel Hamma Garden, Alger</li><li>Inscription obligatoire</li><li>Attestation de participation délivrée</li><li>Tarifs : communiqués prochainement</li></ul></div>
+  </div>
+  <form id="reg" name="inscription" method="POST" action="/merci.html" data-netlify="true" netlify-honeypot="bot-field">
+   <input type="hidden" name="form-name" value="inscription"><p hidden><label>Ne pas remplir <input name="bot-field"></label></p>
+   <div class="row"><div><label>Nom *</label><input name="nom" required></div><div><label>Prénom *</label><input name="prenom" required></div></div>
+   <div class="row"><div><label>E-mail *</label><input name="email" type="email" required></div><div><label>Téléphone</label><input name="tel" type="tel"></div></div>
+   <div class="row"><div><label>Statut *</label><select name="statut" required><option value="">Choisir…</option><option>Chirurgien vasculaire</option><option>Chirurgien (autre spécialité)</option><option>Médecin (autre spécialité)</option><option>Radiologue interventionnel</option><option>Résident</option><option>Paramédical</option><option>Industrie</option></select></div><div><label>Établissement</label><input name="etab"></div></div>
+   <div class="row"><div><label>Pays</label><input name="pays" value="Algérie"></div><div><label>Événement *</label><select name="event" required><option>2ème Congrès de l’ACVES – 30 avril – 1er mai 2027</option></select></div></div>
+   <label>Message</label><textarea name="msg" rows="3"></textarea>
+   <div style="margin-top:16px"><button class="btn solid">Envoyer mon inscription →</button></div>
+   <p class="note">Les données sont utilisées uniquement pour la gestion des inscriptions.</p>
+  </form>
+ </div>
+</section>
+
+<section class="sec alt" id="actualites">
+ <div class="wrap">
+  <div class="eyebrow">Actualités</div>
+  <h2 data-i="news">Actualités</h2>
+  <div class="cards">
+   <div class="card"><div class="meta">Endovasculaire</div><h3>Succès d’une implantation d’endoprothèse aortique</h3><p>Une équipe algérienne réalise avec succès une intervention endovasculaire innovante.</p></div>
+   <div class="card"><div class="meta">Congrès</div><h3>2ème Congrès de l’ACVES : appel à abstracts</h3><p>Soumettez vos travaux avant le 31 décembre 2026 pour le congrès des 30 avril – 1er mai 2027 à Alger.</p></div>
+   <div class="card"><div class="meta">Formation</div><h3>Programme d’ateliers sur simulateur</h3><p>Des sessions pratiques pour les résidents et jeunes chirurgiens.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="ressources">
+ <div class="wrap">
+  <div class="eyebrow">Bibliothèque</div>
+  <h2 data-i="n7">Ressources</h2>
+  <p class="lead">Recommandations internationales de référence et fiches pratiques.</p>
+  <div class="cards">
+   <div class="card"><h3>ESVS Guidelines</h3><p>Recommandations de la European Society for Vascular Surgery.</p><p style="margin-top:10px"><a href="https://esvs.org/guidelines/" target="_blank" rel="noopener">esvs.org →</a></p></div>
+   <div class="card"><h3>SVS Practice Guidelines</h3><p>Society for Vascular Surgery (États-Unis).</p><p style="margin-top:10px"><a href="https://vascular.org/" target="_blank" rel="noopener">vascular.org →</a></p></div>
+   <div class="card"><h3>Fiches pratiques ACVES</h3><p>Fiches patients et protocoles (à venir).</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec alt" id="contact">
+ <div class="wrap two">
+  <div class="contact-box">
+   <h3 style="font-size:24px" data-i="n8">Contact</h3>
+   <p>Pour toute question, partenariat ou inscription, contactez l’ACVES :</p>
+   <div class="ci"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="1"/><path d="M2 6l10 7 10-7"/></svg><a href="mailto:info.acves@gmail.com">info.acves@gmail.com</a></div>
+   <div class="ci"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><a href="tel:+213559033724">00213 559 033 724</a></div>
+   <div class="ci"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5z"/></svg><span>Alger, Algérie</span></div>
+   <div class="ci"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c3 3 3 17 0 20M12 2c-3 3-3 17 0 20"/></svg><span>www.acves.dz</span></div>
+  </div>
+  <form name="contact" method="POST" action="/merci.html" data-netlify="true" netlify-honeypot="bot-field">
+   <input type="hidden" name="form-name" value="contact"><p hidden><label>Ne pas remplir <input name="bot-field"></label></p>
+   <h3 style="margin-top:0;color:var(--navy)">Envoyer un message</h3>
+   <div class="row"><div><label>Nom complet *</label><input name="nom" required></div><div><label>E-mail *</label><input name="email" type="email" required></div></div>
+   <label>Objet</label><input name="objet">
+   <label>Message *</label><textarea name="msg" rows="5" required></textarea>
+   <div style="margin-top:16px"><button class="btn solid">Envoyer →</button></div>
+  </form>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <span>📍 Alger, Algérie</span>
+  <a href="mailto:info.acves@gmail.com">✉ info.acves@gmail.com</a>
+  <a href="tel:+213559033724">☎ 00213 559 033 724</a>
+  <div class="soc">
+   <a href="#" aria-label="LinkedIn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M4 3h16a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm3 7v8h2.5v-8zm1.2-4a1.4 1.4 0 100 2.8 1.4 1.4 0 000-2.8zM11 10v8h2.5v-4.2c0-1.1.5-1.8 1.4-1.8s1.3.7 1.3 1.8V18h2.5v-4.8c0-2.4-1.3-3.4-3-3.4-1.1 0-1.9.5-2.3 1.2V10z"/></svg></a>
+   <a href="#" aria-label="YouTube"><svg width="24" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 4 12 4 12 4s-4.6 0-7.8.2c-.4.1-1.4.1-2.3 1C1.2 5.9 1 7.5 1 7.5S.8 9.3.8 11.2v1.6c0 1.9.2 3.7.2 3.7s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.2 7.6.2s4.6 0 7.8-.2c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.7v-1.6c0-1.9-.2-3.7-.2-3.7zM9.7 15V8.4l6.1 3.3z"/></svg></a>
+   <a href="#" aria-label="Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-1.6 19.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0012 2z"/></svg></a>
+  </div>
+  <span class="fl">Pour une médecine vasculaire de qualité en Algérie 🇩🇿</span>
+ </div>
+ <div class="copy">© 2026 ACVES – Algerian College of Vascular &amp; Endovascular Surgery · Collège Algérien de Chirurgie Vasculaire et Endovasculaire</div>
+</footer>
+
+<script>
+function doSearch(e){e.preventDefault();var q=document.getElementById("q").value.trim().toLowerCase();if(!q)return false;var els=document.querySelectorAll("section h2,section h3,.ev h4");for(var i=0;i<els.length;i++){if(els[i].textContent.toLowerCase().indexOf(q)>-1){els[i].scrollIntoView({behavior:"smooth",block:"center"});els[i].style.background="#fff3b0";return false}}return false}
+(function(){var end=new Date('2026-12-31T23:59:59+01:00').getTime(),g=document.getElementById('cd');if(!g)return;var i;function t(){var d=Math.max(0,end-Date.now()),v={d:Math.floor(d/864e5),h:Math.floor(d/36e5)%24,m:Math.floor(d/6e4)%60,s:Math.floor(d/1e3)%60};g.querySelectorAll('b').forEach(function(b){var x=v[b.dataset.u];b.textContent=b.dataset.u==='d'?x:String(x).padStart(2,'0')});if(d<=0){g.parentNode.querySelector('.cd-title').textContent='Soumissions clôturées';clearInterval(i)}}t();i=setInterval(t,1000)})();
+(function(){var ta=document.getElementById('abs-txt'),c=document.getElementById('abs-count');if(!ta)return;ta.addEventListener('input',function(){var n=(ta.value.trim().match(/\S+/g)||[]).length;c.textContent=n+' / 300 mots';c.style.color=n>300?'#d6332b':'';ta.setCustomValidity(n>300?'Le résumé dépasse 300 mots.':'')})})();
+document.querySelectorAll('nav.main a').forEach(function(a){a.addEventListener('click',function(){document.querySelectorAll('nav.main a').forEach(function(x){x.classList.remove('on')});a.classList.add('on')})});
+var T={
+fr:{title:"Collège Algérien de Chirurgie Vasculaire et Endovasculaire",sub:"Chirurgie vasculaire · Chirurgie endovasculaire",n9:"Abstracts",motto:"Soigner · Innover · Partager",n1:"Accueil",n2:"À propos",n3:"Pathologies",n4:"Techniques",n5:"Événements",n6:"Congrès",n7:"Ressources",n8:"Contact",h:"Ensemble pour une chirurgie vasculaire d’excellence en Algérie",tag:"Vasculaire · Endovasculaire · Innovation",cta:"Découvrir notre mission",q1:"Nos Activités",q2:"Événements à Venir",q3:"Ressources",q4:"Nous Contacter",news:"Actualités"},
+ar:{title:"الكلية الجزائرية لجراحة الأوعية الدموية وداخل الأوعية",sub:"جراحة الأوعية الدموية · الجراحة داخل الأوعية",n9:"الملخصات",motto:"علاج · ابتكار · مشاركة",n1:"الرئيسية",n2:"من نحن",n3:"الأمراض",n4:"التقنيات",n5:"الفعاليات",n6:"المؤتمرات",n7:"الموارد",n8:"اتصل بنا",h:"معًا من أجل جراحة أوعية دموية متميزة في الجزائر",tag:"الأوعية الدموية · داخل الأوعية · ابتكار",cta:"اكتشف مهمتنا",q1:"نشاطاتنا",q2:"الفعاليات القادمة",q3:"الموارد",q4:"اتصل بنا",news:"الأخبار"},
+en:{title:"Algerian College of Vascular and Endovascular Surgery",sub:"Vascular surgery · Endovascular surgery",n9:"Abstracts",motto:"Care · Innovate · Share",n1:"Home",n2:"About",n3:"Conditions",n4:"Techniques",n5:"Events",n6:"Congress",n7:"Resources",n8:"Contact",h:"Together for excellence in vascular surgery in Algeria",tag:"Vascular · Endovascular · Innovation",cta:"Discover our mission",q1:"Our Activities",q2:"Upcoming Events",q3:"Resources",q4:"Contact Us",news:"News"}};
+document.querySelectorAll(".langs button").forEach(function(b){b.onclick=function(){var l=b.dataset.l;document.querySelectorAll(".langs button").forEach(function(x){x.classList.toggle("on",x===b)});document.querySelectorAll("[data-i]").forEach(function(el){var t=T[l][el.dataset.i];if(t)el.textContent=t});document.documentElement.lang=l;document.querySelector("nav.main ul").dir=l==="ar"?"rtl":"ltr"}});
+</script>
+</body>
+</html>
